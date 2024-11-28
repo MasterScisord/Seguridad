@@ -8,5 +8,6 @@ from .views import (
 urlpatterns = [
     path("", index, name="index"),
     path('validate_user/', validate_user, name='validate_user'),
-    path("Home/", Home, name="Home"),
+    path("home/", Home, name="Home"),
+
 ]
