@@ -122,3 +122,23 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Opciones de cookie. 
+
+# Usa cookie segura, que le dice al explorador que solo envíe la cookie con protocolo HTTPS
+SESSION_COOKIE_SECURE = True
+
+# Usa cookie segura para el token CSRF.
+CSRF_COOKIE_SECURE = True
+
+# Le da la flag HttpOnly a la cookie, que impide que el JS acceda a la cookie y evita ataques de script xss.
+SESSION_COOKIE_HTTPONLY = True
+
+# Le da la flag HttpOnly a la cookie CSRF, que impide que el JS acceda a la cookie.
+CSRF_COOKIE_HTTPONLY = True
+
+# Valor de la flag SameSite de la cookie, que previene que se envie la cookie en peticiones de un sitio a otro
+SESSION_COOKIE_SAMESITE = 'Strict'
+
+# Valor de la flag SameSite de la cookie CSRF.
+CSRF_COOKIE_SAMESITE = 'Strict'
