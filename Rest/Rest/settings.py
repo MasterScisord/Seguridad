@@ -142,3 +142,15 @@ SESSION_COOKIE_SAMESITE = 'Strict'
 
 # Valor de la flag SameSite de la cookie CSRF.
 CSRF_COOKIE_SAMESITE = 'Strict'
+
+# Le da tiempo límite en segundos a la intiguedad de la cookie (1 Hora).
+SESSION_COOKIE_AGE = 900
+
+# La cookie expira cuándo se cierra el navegador.
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+# Le da nombre a la cookie.
+SESSION_COOKIE_NAME = "galletalol"
+
+# Guarda los datos de la sesión con cada request en ves de solamente cuándo se modifique.
+SESSION_SAVE_EVERY_REQUEST = True
